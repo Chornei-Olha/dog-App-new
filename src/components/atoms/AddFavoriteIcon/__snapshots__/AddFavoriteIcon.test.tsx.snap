@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddFavoriteIcon should match snapshot Primary 1`] = `
+<div>
+  <test-file-stub
+    aria-hidden="true"
+    classname="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+    focusable="false"
+  />
+</div>
+`;

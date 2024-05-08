@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`atoms/Link should match snapshot Component 1`] = `
+.emotion-0 {
+  margin: 0;
+  font: inherit;
+  color: #921FED;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #5F556D;
+  background-color: transparent;
+  font-size: 20px;
+  text-transform: lowercase;
+  border-radius: 6px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+  color: #FFCF32;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:hover {
+  color: #A239F4;
+}
+
+.emotion-0:active {
+  color: #A239F4;
+}
+
+<div>
+  <a
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-0"
+    href="/"
+  >
+    more
+  </a>
+</div>
+`;
+
+exports[`atoms/Link should match snapshot Component 2`] = `
+.emotion-0 {
+  margin: 0;
+  font-family: Dosis,FugazOne,Karantina,MedulaOne,Goldman,Mohave,MonomaniacOne,Raleway;
+  font-weight: 300;
+  font-size: 5.357142857142858rem;
+  line-height: 1.2;
+  color: #921FED;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #5F556D;
+  background-color: transparent;
+  font-size: 20px;
+  text-transform: lowercase;
+  border-radius: 6px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+  text-transform: capitalize;
+  padding: 4px 10px;
+}
+
+.emotion-0:hover {
+  background-color: #A239F4;
+  color: #FFFFFF;
+}
+
+.emotion-0:active {
+  background-color: #921FED;
+  color: #FFFFFF;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
+}
+
+<div>
+  <a
+    class="MuiTypography-root MuiTypography-h2 MuiLink-root MuiLink-underlineNone emotion-0"
+    href="/"
+  >
+    Main
+  </a>
+</div>
+`;

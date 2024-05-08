@@ -1,0 +1,1 @@
+export { useGetImagesWithFavorites } from './useGetImagesWithFavorites';

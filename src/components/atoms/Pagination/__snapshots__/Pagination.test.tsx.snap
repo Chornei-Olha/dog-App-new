@@ -1,0 +1,356 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`atoms/Pagination should match snapshot Component 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  color: #5F556D;
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+.emotion-0 .MuiPaginationItem-root {
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.emotion-0 .MuiPaginationItem-root:hover {
+  color: #921FED;
+  background-color: transparent;
+}
+
+.emotion-0 .Mui-selected {
+  color: #FFFFFF;
+  background-color: #B568F2;
+  box-shadow: 2px 2px 0px 0px #000000;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 50px;
+  background-color: #921FED;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  padding: 10px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
+  font-family: Dosis,FugazOne,Karantina,MedulaOne,Goldman,Mohave,MonomaniacOne,Raleway;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.43;
+  border-radius: 16px;
+  text-align: center;
+  box-sizing: border-box;
+  min-width: 32px;
+  height: 32px;
+  padding: 0 6px;
+  margin: 0 3px;
+  color: #5F556D;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.emotion-2::-moz-focus-inner {
+  border-style: none;
+}
+
+.emotion-2.Mui-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+@media print {
+  .emotion-2 {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+.emotion-2:hover {
+  background-color: #A239F4;
+}
+
+.emotion-2:active {
+  background-color: #B568F2;
+}
+
+.emotion-2.Mui-focusVisible {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.emotion-2.Mui-disabled {
+  opacity: 0.38;
+}
+
+.emotion-2:hover {
+  background-color: #A239F4;
+}
+
+@media (hover: none) {
+  .emotion-2:hover {
+    background-color: transparent;
+  }
+}
+
+.emotion-2.Mui-selected {
+  background-color: #B568F2;
+}
+
+.emotion-2.Mui-selected:hover {
+  background-color: rgba(181, 104, 242, 0.12);
+}
+
+@media (hover: none) {
+  .emotion-2.Mui-selected:hover {
+    background-color: #B568F2;
+  }
+}
+
+.emotion-2.Mui-selected.Mui-focusVisible {
+  background-color: rgba(181, 104, 242, 0.2);
+}
+
+.emotion-2.Mui-selected.Mui-disabled {
+  opacity: 1;
+  color: rgba(0, 0, 0, 0.26);
+  background-color: #B568F2;
+}
+
+.emotion-2.Mui-selected.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.emotion-3 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 2.142857142857143rem;
+  font-size: 1.7857142857142858rem;
+  margin: 0 -8px;
+}
+
+.emotion-7 {
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+}
+
+<div>
+  <nav
+    aria-label="pagination navigation"
+    class="MuiPagination-root MuiPagination-text emotion-0"
+  >
+    <ul
+      class="MuiPagination-ul emotion-1"
+    >
+      <li>
+        <button
+          aria-label="Go to first page"
+          class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-disabled MuiPaginationItem-firstLast emotion-2"
+          disabled=""
+          tabindex="-1"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon emotion-3"
+            data-testid="FirstPageIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z"
+            />
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="Go to previous page"
+          class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-disabled MuiPaginationItem-previousNext emotion-2"
+          disabled=""
+          tabindex="-1"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon emotion-3"
+            data-testid="NavigateBeforeIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+            />
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button
+          aria-current="true"
+          aria-label="page 1"
+          class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-selected MuiPaginationItem-page emotion-2"
+          tabindex="0"
+          type="button"
+        >
+          1
+          <span
+            class="MuiTouchRipple-root emotion-7"
+          />
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="Go to page 2"
+          class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page emotion-2"
+          tabindex="0"
+          type="button"
+        >
+          2
+          <span
+            class="MuiTouchRipple-root emotion-7"
+          />
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="Go to page 3"
+          class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page emotion-2"
+          tabindex="0"
+          type="button"
+        >
+          3
+          <span
+            class="MuiTouchRipple-root emotion-7"
+          />
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="Go to next page"
+          class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-previousNext emotion-2"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon emotion-3"
+            data-testid="NavigateNextIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root emotion-7"
+          />
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="Go to last page"
+          class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-firstLast emotion-2"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon emotion-3"
+            data-testid="LastPageIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root emotion-7"
+          />
+        </button>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

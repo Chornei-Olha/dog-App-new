@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BorderedBox should have a black shadow when transmitting this props 1`] = `"bordered-box"`;
+
+exports[`BorderedBox should have a main shadow when transmitting this props 1`] = `"bordered-box"`;
+
+exports[`BorderedBox should render without errors 1`] = `"bordered-box"`;
+
+exports[`BorderedBox the default state should be a black shadow 1`] = `"bordered-box"`;

@@ -1,0 +1,370 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RHeader should match snapshot RHeader 1`] = `
+.emotion-0 {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: static;
+  background-color: #1976d2;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: #757575;
+  border-radius: 0 0 32px 32px;
+  box-shadow: 3px 3px 0px 0px #000;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  background-color: ADA7B8;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.emotion-3 {
+  margin: 0;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  font-family: Goldman;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  font-family: Goldman;
+  font-size: 20px;
+  max-width: 74px;
+  line-height: 0.8;
+}
+
+.emotion-5 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  max-width: 575px;
+  width: 100%;
+  padding: 0;
+}
+
+.emotion-6 {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: transparent;
+  font-size: 20px;
+  border-radius: 6px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+  text-transform: capitalize;
+  padding: 4px 10px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-6:hover {
+  background-color: #1565c0;
+  color: #fff;
+}
+
+.emotion-6:active {
+  background-color: #1976d2;
+  color: #fff;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.emotion-6.active {
+  background-color: #1976d2;
+  color: #fff;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.emotion-11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-11>:not(style):not(style) {
+  margin: 0;
+}
+
+.emotion-11>:not(style)~:not(style) {
+  margin-left: 8px;
+}
+
+.emotion-12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  font-size: 1.5rem;
+  padding: 8px;
+  border-radius: 50%;
+  overflow: visible;
+  color: rgba(0, 0, 0, 0.54);
+  -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.emotion-12::-moz-focus-inner {
+  border-style: none;
+}
+
+.emotion-12.Mui-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+@media print {
+  .emotion-12 {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+.emotion-12:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+@media (hover: none) {
+  .emotion-12:hover {
+    background-color: transparent;
+  }
+}
+
+.emotion-12.Mui-disabled {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.emotion-13 {
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+}
+
+<div>
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic emotion-0"
+  >
+    <div
+      class="MuiBox-root emotion-1"
+    >
+      <a
+        class="emotion-2"
+        href="/"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 emotion-3"
+        >
+          Dog
+        </p>
+        <test-file-stub
+          aria-hidden="true"
+          classname="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          focusable="false"
+        />
+        <p
+          class="MuiTypography-root MuiTypography-body1 emotion-4"
+        >
+          Star Gallery
+        </p>
+      </a>
+      <nav
+        class="MuiList-root MuiList-padding emotion-5"
+      >
+        <a
+          aria-current="page"
+          class="emotion-6 active"
+          href="/"
+        >
+          <span
+            class="active"
+          >
+            Main
+          </span>
+        </a>
+        <a
+          class="emotion-6"
+          href="/breeds"
+        >
+          <span
+            class=""
+          >
+            Breeds
+          </span>
+        </a>
+        <a
+          class="emotion-6"
+          href="/vote"
+        >
+          <span
+            class=""
+          >
+            Vote
+          </span>
+        </a>
+        <a
+          class="emotion-6"
+          href="/history"
+        >
+          <span
+            class=""
+          >
+            History
+          </span>
+        </a>
+        <a
+          class="emotion-6"
+          href="/your-uploads"
+        >
+          <span
+            class=""
+          >
+            Your uploads
+          </span>
+        </a>
+      </nav>
+      <div
+        class="MuiStack-root emotion-11"
+      >
+        <a
+          class=""
+          href="/favorite"
+        >
+          <test-file-stub
+            aria-hidden="true"
+            classname="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            focusable="false"
+          />
+        </a>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-12"
+          tabindex="0"
+          type="button"
+        >
+          <test-file-stub
+            aria-hidden="true"
+            classname="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            focusable="false"
+          />
+          <span
+            class="MuiTouchRipple-root emotion-13"
+          />
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+`;

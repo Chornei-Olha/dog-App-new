@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu should match snapshot Menu 1`] = `
+.emotion-0 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  max-width: 575px;
+  width: 100%;
+  padding: 0;
+}
+
+.emotion-1 {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: transparent;
+  font-size: 20px;
+  border-radius: 6px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+  text-transform: capitalize;
+  padding: 4px 10px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-1:hover {
+  background-color: #1565c0;
+  color: #fff;
+}
+
+.emotion-1:active {
+  background-color: #1976d2;
+  color: #fff;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.emotion-1.active {
+  background-color: #1976d2;
+  color: #fff;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
+}
+
+<div>
+  <nav
+    class="MuiList-root MuiList-padding emotion-0"
+  >
+    <a
+      aria-current="page"
+      class="emotion-1 active"
+      href="/"
+    >
+      <span
+        class="active"
+      >
+        Main
+      </span>
+    </a>
+    <a
+      class="emotion-1"
+      href="/breeds"
+    >
+      <span
+        class=""
+      >
+        Breeds
+      </span>
+    </a>
+    <a
+      class="emotion-1"
+      href="/vote"
+    >
+      <span
+        class=""
+      >
+        Vote
+      </span>
+    </a>
+    <a
+      class="emotion-1"
+      href="/history"
+    >
+      <span
+        class=""
+      >
+        History
+      </span>
+    </a>
+    <a
+      class="emotion-1"
+      href="/your-uploads"
+    >
+      <span
+        class=""
+      >
+        Your uploads
+      </span>
+    </a>
+  </nav>
+</div>
+`;
