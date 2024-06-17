@@ -3,39 +3,39 @@ import {
   Box,
   Button,
   Pagination,
-  TextField
-} from '@mui/material';
-import { useState } from 'react';
+  TextField,
+} from "@mui/material";
+import { useState } from "react";
 
-import shadowBottom from '../../../assets/img/mainPage/shadow/shadow-1.svg';
-import shadowTop from '../../../assets/img/mainPage/shadow/shadow-2.svg';
+import shadowBottom from "../../../assets/img/mainPage/shadow/shadow-1.svg";
+import shadowTop from "../../../assets/img/mainPage/shadow/shadow-2.svg";
 import {
   Wrap,
   Container,
   ShadowTopWrap,
   ShadowBottomWrap,
-  FiltersWrap
-} from './styled';
-import { Grid } from '../../molecules/Grid';
-import { useGetImagesWithFavorites } from '../../../utils/hooks';
-import { Loader } from '../../atoms/Loader';
+  FiltersWrap,
+} from "./styled";
+import { Grid } from "../../molecules/Grid";
+import { useGetImagesWithFavorites } from "../../../utils/hooks";
+import { Loader } from "../../atoms/Loader";
 
 const listFormats = [
-  { title: 'All', value: 'All' },
-  { title: 'gif', value: 'gif' },
-  { title: 'png', value: 'png' },
-  { title: 'jpg', value: 'jpg' }
+  { title: "All", value: "All" },
+  { title: "gif", value: "gif" },
+  { title: "png", value: "png" },
+  { title: "jpg", value: "jpg" },
 ];
 
 export const MainPage = () => {
   const [page, setPage] = useState<number>(1);
-  const [imageFormat, setImageFormat] = useState<string>('all');
-  const [order, setImageOrder] = useState<string>('RANDOM');
+  const [imageFormat, setImageFormat] = useState<string>("all");
+  const [order, setImageOrder] = useState<string>("RANDOM");
   const { data: favoritedImages, isLoading } = useGetImagesWithFavorites({
     limit: 10,
     page,
     mime_type: imageFormat,
-    order
+    order,
   });
 
   const handleChangePage = (
@@ -64,17 +64,17 @@ export const MainPage = () => {
       <Container>
         <FiltersWrap
           sx={{
-            width: '100%',
-            marginBottom: 2
+            width: "100%",
+            marginBottom: 2,
           }}
         >
           {/*  FILTERS  */}
           <Autocomplete
-            sx={{ width: '200px', padding: 0 }}
+            sx={{ width: "200px", padding: 0 }}
             id="image-format"
-            options={listFormats.map(option => option.title)}
+            options={listFormats.map((option) => option.title)}
             onChange={handleChangeAutocomplete}
-            renderInput={params => (
+            renderInput={(params) => (
               // eslint-disable-next-line react/jsx-props-no-spreading
               <TextField {...params} label="Image format" />
             )}
@@ -82,28 +82,28 @@ export const MainPage = () => {
 
           {/*  SORT */}
 
-          <Box sx={{ display: 'flex', gap: 2 }}>
+          <Box sx={{ display: "flex", gap: 2 }}>
             <Button
               variant="contained"
               color="secondary"
-              style={order === 'RANDOM' ? { backgroundColor: 'yellow' } : {}}
-              onClick={() => handleSort('RANDOM')}
+              style={order === "RANDOM" ? { backgroundColor: "yellow" } : {}}
+              onClick={() => handleSort("RANDOM")}
             >
               rand
             </Button>
             <Button
               variant="contained"
               color="secondary"
-              style={order === 'ABS' ? { backgroundColor: 'yellow' } : {}}
-              onClick={() => handleSort('ABS')}
+              style={order === "ABS" ? { backgroundColor: "yellow" } : {}}
+              onClick={() => handleSort("ABS")}
             >
               Abs
             </Button>
             <Button
               variant="contained"
               color="secondary"
-              style={order === 'DESC' ? { backgroundColor: 'yellow' } : {}}
-              onClick={() => handleSort('DESC')}
+              style={order === "DESC" ? { backgroundColor: "yellow" } : {}}
+              onClick={() => handleSort("DESC")}
             >
               Desc
             </Button>

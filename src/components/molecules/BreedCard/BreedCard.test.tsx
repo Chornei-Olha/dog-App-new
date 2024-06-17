@@ -1,16 +1,29 @@
-import { render, screen, fireEvent } from '@testing-library/react';
-import BreedCard from '.';
+import { render, screen, fireEvent } from "@testing-library/react";
+import BreedCard from ".";
 
-const sampleProps = {
-  image: 'dog.jpg',
-  name: 'Sample Breed',
-  temperament: 'Friendly and Energetic',
-  moreInfo: 'Additional information about the breed'
+interface BreedCardProps {
+  id: number;
+  referenceImageId: string;
+  image: string;
+  name: string;
+  temperament: string;
+  moreInfo: string;
+}
+
+const sampleProps: BreedCardProps = {
+  id: 1,
+  referenceImageId: "BkE6Wg5E7",
+  image: "dog.jpg",
+  name: "Sample Breed",
+  temperament: "Friendly and Energetic",
+  moreInfo: "Additional information about the breed",
 };
 
-test('renders BreedCard with default state', () => {
+test("renders BreedCard with default state", () => {
   render(
     <BreedCard
+      id={sampleProps.id}
+      referenceImageId={sampleProps.referenceImageId}
       image={sampleProps.image}
       name={sampleProps.name}
       temperament={sampleProps.temperament}
@@ -29,9 +42,11 @@ test('renders BreedCard with default state', () => {
   expect(moreInfoElement).toBeNull();
 });
 
-test('displays more info on hover', () => {
+test("displays more info on hover", () => {
   render(
     <BreedCard
+      id={sampleProps.id}
+      referenceImageId={sampleProps.referenceImageId}
       image={sampleProps.image}
       name={sampleProps.name}
       temperament={sampleProps.temperament}
@@ -48,9 +63,11 @@ test('displays more info on hover', () => {
   expect(moreInfoElement).toBeInTheDocument();
 });
 
-test('hides more info on mouse leave', () => {
+test("hides more info on mouse leave", () => {
   render(
     <BreedCard
+      id={sampleProps.id}
+      referenceImageId={sampleProps.referenceImageId}
       image={sampleProps.image}
       name={sampleProps.name}
       temperament={sampleProps.temperament}

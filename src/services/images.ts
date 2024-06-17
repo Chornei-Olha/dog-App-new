@@ -1,4 +1,4 @@
-import { api } from './api';
+import { api } from "./api";
 
 export interface Images {
   id: string;
@@ -14,7 +14,7 @@ export interface Images {
       height: string;
       life_span: string;
       reference_image_id: string;
-    }
+    },
   ];
   categories: [];
 }
@@ -47,17 +47,15 @@ export interface BreedImage {
   reference_image_id: string;
 }
 
-type ImagesResponse = {
-  [breedId: string]: BreedImage[];
-};
+type ImagesResponse = BreedImage[];
 
 export const imagesApi = api.injectEndpoints({
-  endpoints: build => ({
+  endpoints: (build) => ({
     getBreedImages: build.query<ImagesResponse, string>({
-      query: imageId => ({
-        url: `images/${imageId}`
+      query: (imageId) => ({
+        url: `images/${imageId}`,
       }),
-      providesTags: id => [{ type: 'Images', id }]
+      providesTags: (id) => [{ type: "Images", id }],
     }),
 
     getImagesId: build.query<
@@ -73,16 +71,24 @@ export const imagesApi = api.injectEndpoints({
       query: ({
         limit = 10,
         page = 0,
-        mime_type = 'all',
+        mime_type = "all",
         breed_id,
-        order = 'RANDOM'
+        order = "RANDOM",
       }) => ({
-        url: `images/search?limit=${limit}&page=${page}&mime_types=${mime_type}&order=${order}&breed_id=${breed_id}`
+        url: `images/search?limit=${limit}&page=${page}&mime_types=${mime_type}&order=${order}&breed_id=${breed_id}`,
       }),
-      providesTags: (result = []) => [
-        ...result.map(({ id }) => ({ type: 'Images', id }) as const),
-        { type: 'Images' as const, id: 'LIST' }
-      ]
+      providesTags: (result) => {
+        if (result) {
+          return [
+            ...result.map(
+              ({ id }: { id: string }) => ({ type: "Images", id }) as const
+            ),
+            { type: "Images", id: "LIST" },
+          ];
+        } else {
+          return [{ type: "Images", id: "LIST" }];
+        }
+      },
     }),
 
     getImages: build.query<
@@ -98,27 +104,30 @@ export const imagesApi = api.injectEndpoints({
       query: ({
         limit = 10,
         page = 0,
-        mime_type = 'all',
-        breed_id,
-        order = 'RANDOM'
+        mime_type = "all",
+        // breed_id,
+        order = "RANDOM",
       }) => ({
-        url: `images/search?limit=${limit}&page=${page}&mime_types=${mime_type}&order=${order}`
+        url: `images/search?limit=${limit}&page=${page}&mime_types=${mime_type}&order=${order}`,
       }),
       providesTags: (result = []) => [
-        ...result.map(({ id }) => ({ type: 'Images', id }) as const),
-        { type: 'Images' as const, id: 'LIST' }
-      ]
+        ...(Array.isArray(result)
+          ? result.map(({ id }) => ({ type: "Images", id }) as const)
+          : []),
+
+        { type: "Images" as const, id: "LIST" },
+      ],
     }),
 
     uploadImage: build.mutation<Images, FormData>({
       query(formData) {
         return {
           url: `images/upload`,
-          method: 'POST',
-          body: formData
+          method: "POST",
+          body: formData,
         };
       },
-      invalidatesTags: [{ type: 'Images', id: 'LIST' }]
+      invalidatesTags: [{ type: "Images", id: "LIST" }],
     }),
     uploadImagesList: build.query<
       UploadImage[],
@@ -128,14 +137,14 @@ export const imagesApi = api.injectEndpoints({
       }
     >({
       query: ({ limit = 10, page = 0 }) => ({
-        url: `images/?limit=${limit}&page=${page}`
+        url: `images/?limit=${limit}&page=${page}`,
       }),
       providesTags: (result = []) => [
-        ...result.map(({ id }) => ({ type: 'Images', id }) as const),
-        { type: 'Images' as const, id: 'LIST' }
-      ]
-    })
-  })
+        ...result.map(({ id }) => ({ type: "Images", id }) as const),
+        { type: "Images" as const, id: "LIST" },
+      ],
+    }),
+  }),
 });
 
 export const {
@@ -143,5 +152,5 @@ export const {
   useGetImagesIdQuery,
   useGetImagesQuery,
   useUploadImageMutation,
-  useUploadImagesListQuery
+  useUploadImagesListQuery,
 } = imagesApi;
