@@ -28,6 +28,7 @@ const BreedCard: React.FC<BreedCardProps> = ({
       : temperament;
 
   const { data: breedImages } = useGetBreedImagesQuery(referenceImageId);
+  const imageUrl = breedImages?.url || "http://via.placeholder.com/640x360";
 
   return (
     <BorderedBox
@@ -49,7 +50,8 @@ const BreedCard: React.FC<BreedCardProps> = ({
         onMouseLeave={() => setIsHovered(false)}
       >
         <img
-          src={breedImages?.url || "http://via.placeholder.com/640x360"}
+          src={imageUrl}
+          // src={breedImages?.url || "http://via.placeholder.com/640x360"}
           // src={
           //   Array.isArray(breedImages)
           //     ? breedImages?.url

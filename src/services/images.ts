@@ -1,22 +1,22 @@
 import { api } from "./api";
 
+interface Breed {
+  id: number;
+  name: string;
+  weight: string;
+  height: string;
+  life_span: string;
+  reference_image_id: string;
+}
+
 export interface Images {
   id: string;
   url: string;
+  reference_image_id: string;
   width: number;
   height: number;
   mime_type: string;
-  breeds: [
-    {
-      id: number;
-      name: string;
-      weight: string;
-      height: string;
-      life_span: string;
-      reference_image_id: string;
-    },
-  ];
-  categories: [];
+  breeds: Breed[];
 }
 
 export interface UploadImage {
@@ -55,7 +55,7 @@ export const imagesApi = api.injectEndpoints({
       query: (imageId) => ({
         url: `images/${imageId}`,
       }),
-      providesTags: (id) => [{ type: "Images", id }],
+      providesTags: (_result, _error, id) => [{ type: "Images", id }],
     }),
 
     getImagesId: build.query<
@@ -129,6 +129,7 @@ export const imagesApi = api.injectEndpoints({
       },
       invalidatesTags: [{ type: "Images", id: "LIST" }],
     }),
+
     uploadImagesList: build.query<
       UploadImage[],
       {
