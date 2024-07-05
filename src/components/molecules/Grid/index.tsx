@@ -2,7 +2,7 @@ import { GridCard } from "../GridCard";
 import { Images } from "../../../services/images";
 import { Item, List } from "./styled";
 
-interface ListImagesProps extends Images {
+export interface ListImagesProps extends Images {
   isFavorite: boolean;
 }
 

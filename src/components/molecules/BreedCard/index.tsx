@@ -28,7 +28,7 @@ const BreedCard: React.FC<BreedCardProps> = ({
       : temperament;
 
   const { data: breedImages } = useGetBreedImagesQuery(referenceImageId);
-  const imageUrl = breedImages?.url || "http://via.placeholder.com/640x360";
+  // const imageUrl = breedImages?.url || "http://via.placeholder.com/640x360";
 
   return (
     <BorderedBox
@@ -49,7 +49,36 @@ const BreedCard: React.FC<BreedCardProps> = ({
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <img
+        {breedImages && breedImages.length > 0 ? (
+          breedImages.map((image, index) => (
+            <img
+              key={index}
+              src={image.url}
+              alt={`${name} ${index}`}
+              style={{
+                width: "100%",
+                height: "68%",
+                objectFit: "cover",
+                borderRadius: "20px",
+                marginBottom: "10px",
+              }}
+            />
+          ))
+        ) : (
+          <img
+            src="http://via.placeholder.com/640x360"
+            alt="Placeholder"
+            style={{
+              width: "100%",
+              height: "68%",
+              objectFit: "cover",
+              borderRadius: "20px",
+              marginBottom: "10px",
+            }}
+          />
+        )}
+
+        {/* <img
           src={imageUrl}
           // src={breedImages?.url || "http://via.placeholder.com/640x360"}
           // src={
@@ -64,7 +93,7 @@ const BreedCard: React.FC<BreedCardProps> = ({
             objectFit: "cover",
             borderRadius: "20px",
           }}
-        />
+        /> */}
 
         <BreedCardText>
           <h2
@@ -100,4 +129,5 @@ const BreedCard: React.FC<BreedCardProps> = ({
     </BorderedBox>
   );
 };
+
 export default BreedCard;

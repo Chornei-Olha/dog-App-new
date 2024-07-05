@@ -6,7 +6,7 @@ import {
   TextField,
 } from "@mui/material";
 import { useState } from "react";
-
+import { ListImagesProps } from "../../molecules/Grid";
 import shadowBottom from "../../../assets/img/mainPage/shadow/shadow-1.svg";
 import shadowTop from "../../../assets/img/mainPage/shadow/shadow-2.svg";
 import {
@@ -26,6 +26,16 @@ const listFormats = [
   { title: "png", value: "png" },
   { title: "jpg", value: "jpg" },
 ];
+
+const addMissingProperties = (images: any[]): ListImagesProps[] => {
+  return images.map((image) => ({
+    ...image,
+    width: image.width || 800,
+    height: image.height || 600,
+    mime_type: image.mime_type || "image/jpeg",
+    breeds: image.breeds || [],
+  }));
+};
 
 export const MainPage = () => {
   const [page, setPage] = useState<number>(1);
@@ -55,6 +65,10 @@ export const MainPage = () => {
   const handleSort = (value: string) => {
     setImageOrder(value);
   };
+
+  const transformedImages = favoritedImages
+    ? addMissingProperties(favoritedImages)
+    : [];
 
   return (
     <Wrap>
@@ -110,7 +124,7 @@ export const MainPage = () => {
           </Box>
         </FiltersWrap>
         {isLoading && <Loader />}
-        {favoritedImages && <Grid listImages={favoritedImages} />}
+        {favoritedImages && <Grid listImages={transformedImages} />}
 
         <Pagination
           count={3}
