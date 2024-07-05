@@ -4,6 +4,14 @@ import BorderedBox from "../../atoms/BorderedBox";
 import { BreedCardStyled, BreedCardText } from "./styled";
 import { useGetBreedImagesQuery } from "../../../services/images";
 
+// interface Image {
+//   url: string;
+// }
+
+interface BreedImages {
+  url: string;
+}
+
 interface BreedCardProps {
   id: number;
   referenceImageId: string;
@@ -49,7 +57,39 @@ const BreedCard: React.FC<BreedCardProps> = ({
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        {breedImages && breedImages.length > 0 ? (
+        <div>
+          {Array.isArray(breedImages) ? (
+            breedImages.length > 0 ? (
+              breedImages.map((image, index) => (
+                <img
+                  key={index}
+                  src={image.url}
+                  alt={`Breed Image ${index}`}
+                  style={{ width: "200px", height: "auto", margin: "10px" }}
+                />
+              ))
+            ) : (
+              <img
+                src="http://via.placeholder.com/640x360"
+                alt="Placeholder"
+                style={{ width: "200px", height: "auto", margin: "10px" }}
+              />
+            )
+          ) : (
+            breedImages && (
+              <img
+                src={
+                  (breedImages as BreedImages).url ||
+                  "http://via.placeholder.com/640x360"
+                }
+                alt="Breed Image"
+                style={{ width: "200px", height: "auto", margin: "10px" }}
+              />
+            )
+          )}
+        </div>
+
+        {/* {breedImages && breedImages.length > 0 ? (
           breedImages.map((image, index) => (
             <img
               key={index}
@@ -76,16 +116,16 @@ const BreedCard: React.FC<BreedCardProps> = ({
               marginBottom: "10px",
             }}
           />
-        )}
+        )} */}
 
         {/* <img
           src={imageUrl}
-          // src={breedImages?.url || "http://via.placeholder.com/640x360"}
-          // src={
-          //   Array.isArray(breedImages)
-          //     ? breedImages?.url
-          //     : "http://via.placeholder.com/640x360"
-          // }
+          src={breedImages?.url || "http://via.placeholder.com/640x360"}
+          src={
+            Array.isArray(breedImages)
+              ? breedImages?.url
+              : "http://via.placeholder.com/640x360"
+          }
           alt={name}
           style={{
             width: "100%",
